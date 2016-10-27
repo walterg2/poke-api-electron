@@ -34,7 +34,7 @@ header {
 }
 
 .pokemon-list, .details {
-  margin-top: 5em;
+  margin: 5em 0 0 10px;
   flex-grow: 1;
   overflow-y: scroll;
 }
@@ -44,8 +44,8 @@ header {
 }
 
 .pokemon-list {
-  margin-left: 10px;
   width: 25%;
+  border-right: 1px solid #ccc;
 }
 
 ul.list {
@@ -61,3 +61,23 @@ ul.list li {
 ul.list a {
   text-transform: capitalize;
 }
+
+h3 {
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0 10px;
+  width: 200px;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 140px;
+}
+
+dt:after {
+  content: ':';
+}
+
