@@ -1,0 +1,29 @@
+{
+  "name": "poke-api-electron",
+  "version": "0.0.1",
+  "description": "Pokemon Discovery Application",
+  "main": "app/main/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo 'No tests found'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterg2/poke-api-electron.git"
+  },
+  "keywords": [
+    "Pokemon",
+    "Discovery"
+  ],
+  "author": "George T. Walters II",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walterg2/poke-api-electron/issues"
+  },
+  "homepage": "https://github.com/walterg2/poke-api-electron#readme",
+  "devDependencies": {
+    "electron": "^1.4.4"
+  }
+}
