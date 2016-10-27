@@ -1,1 +1,9 @@
 node_modules
+
+poke-api-electron-darwin-x64/
+poke-api-electron-linux-armv7l/
+poke-api-electron-linux-ia32/
+poke-api-electron-linux-x64/
+poke-api-electron-mas-x64/
+poke-api-electron-win32-ia32/
+poke-api-electron-win32-x64/
