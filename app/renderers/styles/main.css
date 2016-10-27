@@ -1,0 +1,63 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font: menu;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  flex: 0 64px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.pokemon-list, .details {
+  margin-top: 5em;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.details {
+  width:75%;
+}
+
+.pokemon-list {
+  margin-left: 10px;
+  width: 25%;
+}
+
+ul.list {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.list li {
+  padding: 3px 0;
+}
+
+ul.list a {
+  text-transform: capitalize;
+}
