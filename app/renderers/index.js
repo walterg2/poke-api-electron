@@ -9,15 +9,29 @@ let getResponse = (response) => {
 
 let createAnchor = (item) => {
   let anchor = document.createElement('a');
-  anchor.href = item.href;
+  anchor.href = item.url;
   anchor.innerHTML = item.name;
 
   return anchor;
 };
 
-let processJson = (jsonObject) => {
+let sortResults = (jsonObject) => {
   let results = jsonObject['results'];
 
+  return results.sort((a, b) => {
+    let first = a.name.toLowerCase();
+    let second = b.name.toLowerCase();
+    if (first < second) {
+      return -1;
+    } else if (first > second) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+};
+
+let processJson = (results) => {
   if (!results.length) {
     throw new Error('No results were returned');
   }
@@ -36,6 +50,7 @@ let handleError = (error) => {
 
 fetch('http://pokeapi.co/api/v2/pokemon/?limit=1000')
   .then(getResponse)
+  .then(sortResults)
   .then(processJson)
   .catch(handleError);
 
